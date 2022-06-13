@@ -8,7 +8,7 @@
 `pip install Shapely` and `pip install descartes`.
 
 ## Data
-The Geoclidean-Elements and Geoclidean-Constraints dataset can be downloaded [here](https://downloads.cs.stanford.edu/viscam/Geoclidean/geoclidean.zip). The data is structured as following:
+The Geoclidean-Elements and Geoclidean-Constraints dataset can be downloaded [here](https://downloads.cs.stanford.edu/viscam/Geoclidean/geoclidean.zip). Geoclidean-Elements includes 17 concepts and 34 tasks of Close and Far, while Geoclidean-Constraints includes 20 concepts and 40 tasks. The data is structured as following:
 ```
 geoclidean    
 │
@@ -53,12 +53,12 @@ See examples of Euclidean geometry language to image rendering in `dataset_creat
 
 
 ### Primitives:
-- Point: `p1(), p1(object1), p1(object1, object2)` (where parentheses indicates constraints, which if indicated, are previously defined lines or circles that the current point must lie on)
+- Point: `p1(), p1(object1), p1(object1, object2)` parameterized by constraints, which if indicated, are previously defined lines or circles that the current point must lie on
 - Line: `line(p1(), p2())` parameterized by beginning and end points (points initialized inline, or can be reused and referred to by name if previously initialized)
 - Circle: `circle(p1(), p2())` parameterized by center and edge points
     
 ### Syntax:
-- Object statement: `l1 = line(p1(), p2())` (`l1` can be any name)
+- Object statement: `l1 = line(p1(), p2())` (`l1` can be any name, and used as a constraint in future point initializations)
 - Invisible object statement: `l1* = line(p1(), p2())` (`*` denotes helper objects not rendered)
 - Concept: `[statement, statement, ...]`
 
