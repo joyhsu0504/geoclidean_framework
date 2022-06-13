@@ -1,6 +1,6 @@
 # Geoclidean: Few-Shot Generalization in Euclidean Geometry
 
-![demonstrative figure](images/data_examples_visibility.pdf)
+![demonstrative figure](images/data_examples.png)
 
 
 
