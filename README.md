@@ -12,37 +12,37 @@ The Geoclidean-Elements and Geoclidean-Constraints dataset can be downloaded [he
 ```
 geoclidean    
 │
-└───elements
+└───elements -> the Geoclidean-Elements dataset
 │   │
 │   └───concept_name
 │       │   concept.txt
 │       │   close_concept.txt
 │       │   far_concept.txt
 │       │   train
-│       │   │   1_fin.png
+│       │   │   1_fin.png -> rendered from concept.txt
 │       │   │   2_fin.png
 │       │   │   3_fin.png
 │       │   │   4_fin.png
 │       │   │   5_fin.png
 │       │   test
-│       │   │   in_1_fin.png -> derived from concept.txt
+│       │   │   in_1_fin.png -> rendered from concept.txt
 │       │   │   in_2_fin.png
 │       │   │   in_3_fin.png
 │       │   │   in_4_fin.png
 │       │   │   in_5_fin.png
-│       │   │   out_close_1_fin.png -> derived from close_concept.txt
+│       │   │   out_close_1_fin.png -> rendered from close_concept.txt
 │       │   │   out_close_2_fin.png
 │       │   │   out_close_3_fin.png
 │       │   │   out_close_4_fin.png
 │       │   │   out_close_5_fin.png
-│       │   │   out_far_1_fin.png -> derived from far_concept.txt
+│       │   │   out_far_1_fin.png -> rendered from far_concept.txt
 │       │   │   out_far_2_fin.png
 │       │   │   out_far_3_fin.png
 │       │   │   out_far_4_fin.png
 │       │   │   out_far_5_fin.png
 │       ...
 │   
-└───constraints
+└───constraints -> the Geoclidean-Constraints dataset
     │   ...
 
 ```
@@ -53,9 +53,9 @@ See examples of Euclidean geometry language to image rendering in `dataset_creat
 
 
 ### Primitives:
-- Point: `p1(), p1(object1), p1(object1, object2)` (where parentheses indicates constraints)
-- Line: `line(p1(), p2())`  (points initialized inline)
-- Circle: `circle(p1(), p2())`
+- Point: `p1(), p1(object1), p1(object1, object2)` (where parentheses indicates constraints, which if indicated, are previously defined lines or circles that the current point must lie on)
+- Line: `line(p1(), p2())` parameterized by beginning and end points (points initialized inline, or can be reused and referred to by name if previously initialized)
+- Circle: `circle(p1(), p2())` parameterized by center and edge points
     
 ### Syntax:
 - Object statement: `l1 = line(p1(), p2())` (`l1` can be any name)
