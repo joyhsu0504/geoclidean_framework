@@ -48,8 +48,8 @@ geoclidean
 ```
 
 
-## Geoclidean DSL
-See an example of Euclidean geometry language to rendering in `dataset_creation.ipynb`.
+## Geoclidean DSL and Rendering
+See examples of Euclidean geometry language to image rendering in `dataset_creation.ipynb`.
 
 
 ### Primitives:
@@ -64,7 +64,6 @@ See an example of Euclidean geometry language to rendering in `dataset_creation.
 
 
 ## Model Benchmarking
-See below notebooks.
 
 ### Feature extraction:
 See feature extraction for VGG16, ResNet50, and IncepeptionV3 in `feature_extraction_cnn.ipynb`, and for Vision Transformer in `feature_extraction_vit.ipynb`.
