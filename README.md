@@ -67,7 +67,11 @@ See an example of Euclidean geometry language to rendering in `dataset_creation.
 See below notebooks.
 
 ### Feature extraction:
+See feature extraction for VGG16, ResNet50, and IncepeptionV3 in `cnn_feature_extraction.ipynb`.
+See feature extraction for Vision Transformer in `vit_feature_extraction.ipynb`.
 
 ### Benchmarking:
+See accuracy and AUC calculation in `model_benchmarks.ipynb`.
+
 
 

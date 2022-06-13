@@ -189,7 +189,7 @@ def save_steps_joint(all_viewable_objs, dir_name, num_steps=3):
     save_plot(dir_name)
     plt.close()
             
-def generate_concept(rules, mark_points=False, steps_path=None, path=None, dup_path=None, show_plots=False):
+def generate_concept(rules, mark_points=False, steps_path=None, path=None, show_plots=False):
     i = 0
     while i < 1:
         try:
@@ -199,8 +199,6 @@ def generate_concept(rules, mark_points=False, steps_path=None, path=None, dup_p
                     save_steps_joint(all_viewable_objs, steps_path)
                 if path:
                     save_plot(path)
-                if dup_path:
-                    save_plot(dup_path)
                     
                 i += 1
                 if not show_plots:
