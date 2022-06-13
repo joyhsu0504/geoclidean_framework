@@ -34,10 +34,10 @@ def parse_rule(rule):
     match = re.match(regex, rule).groups()
 
     if '*' in match[0]:
-        visibility = True
+        visibility = False
         name = match[0][:-1]
     else:
-        visibility = False
+        visibility = True
         name = match[0]
 
     obj_type = match[1]
