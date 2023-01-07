@@ -4,7 +4,7 @@
 
 [Joy Hsu](https://web.stanford.edu/~joycj/), [Jiajun Wu](https://jiajunwu.com), [Noah Goodman](https://jiajunwu.com)
 
-In NeurIPS Datasets and Benchmarks NeurIPS 2022
+In NeurIPS Datasets and Benchmarks 2022
 
 ## Prerequisites
 `pip install Shapely` and `pip install descartes`.
